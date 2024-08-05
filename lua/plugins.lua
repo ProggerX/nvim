@@ -1,11 +1,8 @@
 return {
-	'folke/neodev.nvim',
 	{ 'nvim-lualine/lualine.nvim', opts = {} },
 	{ 'akinsho/toggleterm.nvim', opts = {} },
-	'catppuccin/nvim',
+	{ 'catppuccin/nvim', name = 'ctp' },
 	{ 'stevearc/oil.nvim', opts = {} },
-	'neovim/nvim-lspconfig',
-	'hrsh7th/nvim-cmp',
 	{ 'folke/trouble.nvim', opts = {} },
 	'folke/persistence.nvim',
 	{ 'folke/persistence.nvim', event = 'BufReadPre', opts = {} },
@@ -23,8 +20,10 @@ return {
 	'hrsh7th/vim-vsnip',
 	'mattn/emmet-vim',
 	'dcampos/cmp-emmet-vim',
+	{ 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
 	{ 'Exafunction/codeium.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { enable_chat = true } },
 	'nvim-treesitter/nvim-treesitter',
 	'fatih/vim-go',
 	{ 'folke/flash.nvim', event = 'VeryLazy', opts = { modes = { search = { enabled = true } } } },
+	{ 'windwp/nvim-autopairs', event = "InsertEnter", config = true },
 }
