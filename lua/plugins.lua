@@ -26,4 +26,5 @@ return {
 	'fatih/vim-go',
 	{ 'folke/flash.nvim', event = 'VeryLazy', opts = { modes = { search = { enabled = true } } } },
 	{ 'windwp/nvim-autopairs', event = "InsertEnter", config = true },
+	{ '2kabhishek/nerdy.nvim', dependencies = { 'stevearc/dressing.nvim', 'nvim-telescope/telescope.nvim' }, cmd = 'Nerdy' },
 }
