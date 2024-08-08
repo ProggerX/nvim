@@ -33,6 +33,7 @@ cmp.setup({
 	}),
 	sources = cmp.config.sources({
 		{ name = 'codeium' },
+		{ name = "path" },
 		{ name = 'emmet_vim' },
 		{ name = 'nvim_lsp' },
 		{ name = 'vsnip' },
