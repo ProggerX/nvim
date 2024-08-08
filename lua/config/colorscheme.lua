@@ -1,5 +1,5 @@
 require("gruvbox").setup({
-  terminal_colors = true,
+  terminal_colors = false,
   undercurl = true,
   underline = true,
   bold = true,
