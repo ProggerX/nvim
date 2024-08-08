@@ -1,7 +1,7 @@
 return {
 	{ 'nvim-lualine/lualine.nvim', opts = {} },
 	{ 'akinsho/toggleterm.nvim', opts = {} },
-	{ 'catppuccin/nvim', name = 'ctp' },
+	{ 'ellisonleao/gruvbox.nvim' },
 	{ 'stevearc/oil.nvim', opts = {} },
 	{ 'folke/trouble.nvim', opts = {} },
 	'folke/persistence.nvim',
