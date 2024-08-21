@@ -1,6 +1,7 @@
-local lspconfig = require('lspconfig')
-lspconfig.clangd.setup {}
-lspconfig.rust_analyzer.setup {}
-lspconfig.pyright.setup {}
-lspconfig.gopls.setup {}
-lspconfig.nixd.setup {}
+local lsp = require('lspconfig')
+lsp.clangd.setup {}
+lsp.rust_analyzer.setup {}
+lsp.pyright.setup {}
+lsp.gopls.setup {}
+lsp.nixd.setup {}
+lsp.hls.setup{}
