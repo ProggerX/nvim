@@ -1,5 +1,6 @@
 return {
     { 'nvim-lualine/lualine.nvim', opts = {} },
+    { 'ziglang/zig.vim' },
     { 'akinsho/toggleterm.nvim', opts = {} },
     { 'ellisonleao/gruvbox.nvim' },
     { 'stevearc/oil.nvim', opts = {} },
