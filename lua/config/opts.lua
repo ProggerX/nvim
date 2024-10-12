@@ -9,6 +9,7 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = false
 vim.opt.tabstop = 4
 vim.opt.smartindent = true
+vim.opt.conceallevel = 1;
 
 vim.opt.clipboard = 'unnamedplus'
 
