@@ -14,4 +14,5 @@ vim.opt.conceallevel = 1;
 vim.opt.clipboard = 'unnamedplus'
 
 vim.api.nvim_create_autocmd('BufWritePre', { pattern = { "*.rs" }, command = 'lua vim.lsp.buf.format()' })
+vim.api.nvim_create_autocmd('BufWritePre', { pattern = { "*.hs" }, command = 'lua vim.lsp.buf.format()' })
 vim.api.nvim_create_autocmd('BufWritePre', { pattern = { "*.go" }, command = 'lua require("go.format").goimports()' })
