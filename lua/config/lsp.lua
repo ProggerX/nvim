@@ -3,6 +3,7 @@ lsp.clangd.setup {}
 lsp.rust_analyzer.setup {}
 lsp.pyright.setup {}
 lsp.gopls.setup {}
+lsp.texlab.setup {}
 lsp.nixd.setup {}
 lsp.hls.setup{}
 lsp.arduino_language_server.setup{}
