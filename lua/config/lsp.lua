@@ -3,7 +3,7 @@ lsp.clangd.setup {}
 lsp.typst_lsp.setup {}
 lsp.rust_analyzer.setup {}
 lsp.pyright.setup {}
-lsp.gopls.setup {}
+lsp.gopls.setup { settings = { gopls = { hints = { compositeLiteralFields = true, parameterNames = true } } } }
 lsp.texlab.setup {}
 lsp.nixd.setup {}
 lsp.hls.setup{}
