@@ -11,7 +11,7 @@ local colors = {
   violet   = '#d3869b',
   magenta  = '#d3869b',
   blue     = '#83a598',
-  red      = '#ebdbb2',
+  red      = '#fb4934',
 }
 
 local conditions = {
@@ -75,7 +75,7 @@ ins_left {
   end,
   color = function()
         local mode_color = {
-      n = colors.red,
+      n = colors.fg,
       i = colors.green,
       v = colors.blue,
       [''] = colors.blue,
@@ -102,19 +102,10 @@ ins_left {
 }
 
 ins_left {
-    'filesize',
-  cond = conditions.buffer_not_empty,
-}
-
-ins_left {
   'filename',
   cond = conditions.buffer_not_empty,
   color = { fg = colors.magenta, gui = 'bold' },
 }
-
-ins_left { 'location' }
-
-ins_left { 'progress', color = { fg = colors.fg, gui = 'bold' } }
 
 ins_left {
   'diagnostics',
@@ -158,11 +149,9 @@ ins_right {
   color = { fg = colors.green, gui = 'bold' },
 }
 
-ins_right {
-  'fileformat',
-  fmt = string.upper,
-  icons_enabled = false,   color = { fg = colors.green, gui = 'bold' },
-}
+ins_right { 'location' }
+
+ins_right { 'progress', color = { fg = colors.fg, gui = 'bold' } }
 
 ins_right {
   'branch',
