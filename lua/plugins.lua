@@ -9,7 +9,7 @@ return {
 	{ 'folke/persistence.nvim', event = 'BufReadPre', opts = {} },
 	'nvim-telescope/telescope.nvim',
 	{ 'romgrk/barbar.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
-	-- { 'folke/noice.nvim', event = 'VeryLazy', opts = {}, dependencies = { 'MunifTanjim/nui.nvim', { 'rcarriga/nvim-notify', opts = {background_colour = '#000000'} } }, },
+	{ 'folke/noice.nvim', event = 'VeryLazy', opts = {}, dependencies = { 'MunifTanjim/nui.nvim', { 'rcarriga/nvim-notify', opts = {background_colour = '#000000'} } }, },
 	'goolord/alpha-nvim',
 	'neovim/nvim-lspconfig',
 	'hrsh7th/cmp-nvim-lsp',
@@ -22,7 +22,7 @@ return {
 	'mattn/emmet-vim',
 	'dcampos/cmp-emmet-vim',
 	{ 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
-	{ 'Exafunction/codeium.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { enable_chat = true } },
+	-- { 'Exafunction/codeium.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { enable_chat = true } },
 	'nvim-treesitter/nvim-treesitter',
 	{
 		"ray-x/go.nvim",
