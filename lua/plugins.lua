@@ -64,7 +64,7 @@ return {
 		version = "*",
 		lazy = true,
 		event = {
-		  "BufReadPre " .. vim.fn.expand "~" .. "/Documents/main-vault/*.md",
+			"BufReadPre " .. vim.fn.expand "~" .. "/Documents/main-vault/*.md",
 		},
 		dependencies = {
 			"nvim-lua/plenary.nvim",
@@ -78,5 +78,10 @@ return {
 			},
 		},
 	},
-	{ 'folke/todo-comments.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = {} }
+	{ 'folke/todo-comments.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = {} },
+	{
+		'mrcjkb/haskell-tools.nvim',
+		version = '^4',
+		lazy = false,
+	}
 }
