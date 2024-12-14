@@ -19,4 +19,3 @@ vim.api.nvim_create_autocmd('BufWritePre', { pattern = { "*.hs" }, command = 'lu
 vim.api.nvim_create_autocmd('BufAdd', { pattern = { "*.hs" }, command = 'lua vim.opt.expandtab = true; vim.opt.shiftwidth = 2; vim.opt.tabstop = 2' })
 
 vim.api.nvim_create_autocmd('BufWritePre', { pattern = { "*.go" }, command = 'lua require("go.format").goimports()' })
-vim.api.nvim_create_autocmd('BufWritePre', { pattern = { "*.go" }, command = 'lua require("go.format").goimports()' })
