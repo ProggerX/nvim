@@ -4,10 +4,10 @@ vim.g.mapleader = ' '
 vim.keymap.set('n', '-', '<CMD>Oil<CR>')
 
 -- Tabs
-vim.keymap.set('n', '<A-Tab>', '<CMD>BufferNext<CR>')
-vim.keymap.set('n', '<A-.>', '<CMD>BufferNext<CR>')
-vim.keymap.set('n', '<A-,>', '<CMD>BufferPrevious<CR>')
-vim.keymap.set('n', '<leader>w', '<CMD>BufferClose<CR>')
+vim.keymap.set('n', '<A-Tab>', '<CMD>bnext<CR>')
+vim.keymap.set('n', '<A-.>', '<CMD>bnext<CR>')
+vim.keymap.set('n', '<A-,>', '<CMD>bprev<CR>')
+vim.keymap.set('n', '<leader>w', '<CMD>bdel<CR>')
 
 -- Terminal
 vim.keymap.set('n', '<leader>f', '<CMD>ToggleTerm direction=float<CR>')
