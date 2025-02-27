@@ -1,6 +1,12 @@
 local lsp = require('lspconfig')
 lsp.clangd.setup {}
-lsp.tinymist.setup {}
+lsp.tinymist.setup {
+	root_dir = function()
+		return vim.fn.getcwd()
+    end,
+    offset_encoding = "utf-8",
+	
+}
 lsp.rust_analyzer.setup {}
 lsp.pyright.setup {}
 lsp.gopls.setup { settings = { gopls = { hints = { compositeLiteralFields = true, parameterNames = true } } } }
