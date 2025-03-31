@@ -27,15 +27,8 @@ return {
 	{ 'folke/noice.nvim', event = 'VeryLazy', opts = {}, dependencies = { 'MunifTanjim/nui.nvim', { 'rcarriga/nvim-notify', opts = {background_colour = '#000000'} } }, },
 	'goolord/alpha-nvim',
 	'neovim/nvim-lspconfig',
-	'hrsh7th/cmp-nvim-lsp',
-	'hrsh7th/cmp-buffer',
-	'hrsh7th/cmp-path',
-	'hrsh7th/cmp-cmdline',
-	'hrsh7th/nvim-cmp',
-	'hrsh7th/cmp-vsnip',
 	'hrsh7th/vim-vsnip',
 	'mattn/emmet-vim',
-	'dcampos/cmp-emmet-vim',
 	{ 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
 	-- { 'Exafunction/codeium.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { enable_chat = true } },
 	'nvim-treesitter/nvim-treesitter',
@@ -99,5 +92,11 @@ return {
 		version = '^4',
 		lazy = false,
 	},
-	{ "farbodsz/pointfree.nvim" }
+	{ "farbodsz/pointfree.nvim" },
+	{
+		'saghen/blink.cmp',
+		dependencies = { 'rafamadriz/friendly-snippets' },
+		version = '1.*',
+		opts_extend = { "sources.default" }
+	}
 }
