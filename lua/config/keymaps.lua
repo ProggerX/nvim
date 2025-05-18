@@ -11,6 +11,7 @@ vim.keymap.set('n', '<leader>w', '<CMD>bdel<CR>')
 
 -- Terminal
 vim.keymap.set('n', '<leader>f', '<CMD>ToggleTerm direction=float<CR>')
+vim.keymap.set('n', '<leader>vt', '<CMD>ToggleTerm direction=vertical<CR>')
 
 -- Telescope
 vim.keymap.set('n', 'tf', '<CMD>Telescope find_files<CR>', {desc = 'Search files'})
