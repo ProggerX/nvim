@@ -112,5 +112,6 @@ return {
 		opts = {
 			
 		},
-	}
+	},
+	'nvim-treesitter/nvim-treesitter-textobjects'
 }
