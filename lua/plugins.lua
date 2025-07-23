@@ -88,7 +88,7 @@ return {
 	{ 'folke/todo-comments.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = {} },
 	{
 		'mrcjkb/haskell-tools.nvim',
-		version = '^4',
+		version = '*',
 		lazy = false,
 	},
 	{ "farbodsz/pointfree.nvim" },
