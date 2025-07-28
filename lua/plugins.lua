@@ -13,16 +13,11 @@ return {
 		},
 	},
 	{ 'nvim-lualine/lualine.nvim', opts = {} },
-	{ 'ziglang/zig.vim' },
 	{ 'akinsho/toggleterm.nvim', opts = {} },
-	-- { 'ellisonleao/gruvbox.nvim' },
 	{ 'sainnhe/gruvbox-material', opts = {} },
 	{ 'stevearc/oil.nvim', opts = {} },
 	{ 'folke/trouble.nvim', opts = {} },
-	'folke/persistence.nvim',
-	{ 'folke/persistence.nvim', event = 'BufReadPre', opts = {} },
 	'nvim-telescope/telescope.nvim',
-	-- { 'romgrk/barbar.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
 	{ 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons', opts = {} },
 	{ 'folke/noice.nvim', event = 'VeryLazy', opts = {}, dependencies = { 'MunifTanjim/nui.nvim', { 'rcarriga/nvim-notify', opts = {background_colour = '#000000'} } }, },
 	'goolord/alpha-nvim',
@@ -66,25 +61,6 @@ return {
 	},
 	{ 'numToStr/Comment.nvim', opts = {} },
 	{ 'kylechui/nvim-surround', event = 'VeryLazy', opts = {} },
-	{
-		"epwalsh/obsidian.nvim",
-		version = "*",
-		lazy = true,
-		event = {
-			"BufReadPre " .. vim.fn.expand "~" .. "/Documents/main-vault/*.md",
-		},
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-		},
-		opts = {
-			workspaces = {
-				{
-					name = "main",
-					path = "~/Documents/main-vault",
-				},
-			},
-		},
-	},
 	{ 'folke/todo-comments.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = {} },
 	{
 		'mrcjkb/haskell-tools.nvim',
