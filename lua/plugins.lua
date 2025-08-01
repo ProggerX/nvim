@@ -22,8 +22,6 @@ return {
 	{ 'folke/noice.nvim', event = 'VeryLazy', opts = {}, dependencies = { 'MunifTanjim/nui.nvim', { 'rcarriga/nvim-notify', opts = {background_colour = '#000000'} } }, },
 	'goolord/alpha-nvim',
 	'neovim/nvim-lspconfig',
-	'hrsh7th/vim-vsnip',
-	'mattn/emmet-vim',
 	{ 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
 	'nvim-treesitter/nvim-treesitter',
 	{
@@ -41,24 +39,6 @@ return {
 	},
 	{ 'folke/flash.nvim', event = 'VeryLazy', opts = { modes = { search = { enabled = true } } } },
 	{ 'windwp/nvim-autopairs', event = 'InsertEnter', config = true },
-	{ '2kabhishek/nerdy.nvim', dependencies = { 'stevearc/dressing.nvim', 'nvim-telescope/telescope.nvim' }, cmd = 'Nerdy' },
-	{
-		'christoomey/vim-tmux-navigator',
-		cmd = {
-			'TmuxNavigateLeft',
-			'TmuxNavigateDown',
-			'TmuxNavigateUp',
-			'TmuxNavigateRight',
-			'TmuxNavigatePrevious',
-		},
-		keys = {
-			{ '<c-h>', '<cmd><C-U>TmuxNavigateLeft<cr>' },
-			{ '<c-j>', '<cmd><C-U>TmuxNavigateDown<cr>' },
-			{ '<c-k>', '<cmd><C-U>TmuxNavigateUp<cr>' },
-			{ '<c-l>', '<cmd><C-U>TmuxNavigateRight<cr>' },
-			{ '<c-\\>', '<cmd><C-U>TmuxNavigatePrevious<cr>' },
-		},
-	},
 	{ 'numToStr/Comment.nvim', opts = {} },
 	{ 'kylechui/nvim-surround', event = 'VeryLazy', opts = {} },
 	{ 'folke/todo-comments.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = {} },
