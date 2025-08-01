@@ -26,7 +26,6 @@ vim.keymap.set('n', '<leader>s', '<:%s/')
 vim.keymap.set('n', '<Esc>', '<CMD>noh<CR>')
 vim.keymap.set('n', '<leader>a', '<cmd>AerialNavToggle<CR>')
 vim.keymap.set('n', '<leader>A', '<cmd>AerialToggle!<CR>')
-vim.keymap.set('n', '<leader>o', '<cmd>Neotree toggle right<CR>')
 
 -- Windows
 vim.keymap.set('n', '<C-h>', '<C-w>h')

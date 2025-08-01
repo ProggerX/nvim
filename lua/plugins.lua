@@ -14,13 +14,12 @@ return {
 	},
 	{ 'nvim-lualine/lualine.nvim', opts = {} },
 	{ 'akinsho/toggleterm.nvim', opts = {} },
-	{ 'sainnhe/gruvbox-material', opts = {} },
+	{ 'sainnhe/gruvbox-material' },
 	{ 'stevearc/oil.nvim', opts = {} },
 	{ 'folke/trouble.nvim', opts = {} },
 	'nvim-telescope/telescope.nvim',
-	{ 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons', opts = {} },
+	{ 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons', event = "BufAdd", opts = {} },
 	{ 'folke/noice.nvim', event = 'VeryLazy', opts = {}, dependencies = { 'MunifTanjim/nui.nvim', { 'rcarriga/nvim-notify', opts = {background_colour = '#000000'} } }, },
-	'goolord/alpha-nvim',
 	'neovim/nvim-lspconfig',
 	{ 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
 	'nvim-treesitter/nvim-treesitter',
@@ -44,8 +43,7 @@ return {
 	{ 'folke/todo-comments.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = {} },
 	{
 		'mrcjkb/haskell-tools.nvim',
-		version = '*',
-		lazy = false,
+		version = '*'
 	},
 	{ "farbodsz/pointfree.nvim" },
 	{
@@ -53,21 +51,6 @@ return {
 		dependencies = { 'rafamadriz/friendly-snippets' },
 		version = '1.*',
 		opts_extend = { "sources.default" }
-	},
-	{
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v3.x",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons",
-			"MunifTanjim/nui.nvim",
-		},
-		lazy = false,
-		---@module "neo-tree"
-		---@type neotree.Config?
-		opts = {
-			
-		},
 	},
 	'nvim-treesitter/nvim-treesitter-textobjects'
 }
