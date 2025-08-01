@@ -20,7 +20,6 @@ vim.keymap.set('n', 'tf', '<CMD>Telescope find_files<CR>', {desc = 'Search files
 vim.keymap.set('n', 'tg', '<CMD>Telescope live_grep<CR>', {desc = 'Telescope live grep'})
 
 -- Other
-vim.keymap.set('n', '<leader>w', '<CMD>w<CR>')
 vim.keymap.set('n', '<leader>q', '<CMD>q<CR>')
 vim.keymap.set('n', '<leader>s', '<:%s/')
 vim.keymap.set('n', '<Esc>', '<CMD>noh<CR>')
