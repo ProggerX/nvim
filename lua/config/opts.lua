@@ -1,5 +1,3 @@
-vim.opt.showmode = false
-
 vim.opt.wrap = false
 
 vim.opt.number = true

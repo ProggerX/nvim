@@ -1,6 +1,6 @@
+require('config/keymaps')
 require('config/lazy')
 require('config/opts')
-require('config/keymaps')
 require('config/lsp')
 require('config/cmp')
 require('config/ts')

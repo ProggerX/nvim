@@ -7,5 +7,7 @@ vim.keymap.set('n', '<space>ea', ht.lsp.buf_eval_all, opts)
 vim.keymap.set('n', '<leader>rr', '<CMD>TermExec cmd="cabal repl && exit" direction=float<CR>', opts)
 vim.keymap.set('n', '<leader>hr', '<CMD>TermExec cmd="cabal repl && exit" direction=horizontal<CR>', opts)
 
+vim.keymap.set('n', '<leader>df', ':norm 0"dyiWo"dpa = undefined<CR>')
+
 vim.api.nvim_create_autocmd('BufRead', { pattern = { "*.hs" }, command = 'set expandtab | set shiftwidth=2 | set tabstop=2' })
 vim.api.nvim_create_autocmd('BufRead', { pattern = { "*.cabal" }, command = 'set expandtab | set shiftwidth=4 | set tabstop=4' })
