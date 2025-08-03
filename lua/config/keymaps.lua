@@ -21,6 +21,7 @@ vim.keymap.set('n', 'tg', '<CMD>Telescope live_grep<CR>', {desc = 'Telescope liv
 
 -- Other
 vim.keymap.set('n', '<leader>q', '<CMD>q<CR>')
+vim.keymap.set('n', 'zz', 'ZZ')
 vim.keymap.set('n', '<leader>s', '<:%s/')
 vim.keymap.set('n', '<Esc>', '<CMD>noh<CR>')
 vim.keymap.set('n', '<leader>a', '<cmd>AerialNavToggle<CR>')
