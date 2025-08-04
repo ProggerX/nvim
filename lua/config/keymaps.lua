@@ -12,7 +12,6 @@ vim.keymap.set('n', '<leader>w', '<CMD>bdel<CR>')
 -- Terminal
 vim.keymap.set('n', '<leader>f', '<CMD>ToggleTerm direction=float<CR>')
 vim.keymap.set('t', '<C-n>', '<C-\\><C-n>')
-vim.keymap.set('t', '<leader>f', '<CMD>ToggleTerm<CR>')
 vim.keymap.set('n', '<leader>vt', '<CMD>ToggleTerm direction=vertical size=50<CR>')
 
 -- Telescope
