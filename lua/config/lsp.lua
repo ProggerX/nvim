@@ -1,8 +1,6 @@
-local lsp = require('lspconfig')
-lsp.clangd.setup {}
-lsp.rust_analyzer.setup {}
-lsp.tinymist.setup {}
-lsp.pyright.setup {}
-lsp.gopls.setup { settings = { gopls = { hints = { compositeLiteralFields = true, parameterNames = true } } } }
-lsp.nixd.setup {}
-lsp.marksman.setup {}
+vim.lsp.enable("clangd")
+vim.lsp.enable("pyright")
+vim.lsp.enable("rust-analyzer")
+vim.lsp.enable("tinymist")
+vim.lsp.enable("gopls")
+vim.lsp.enable("nixd")

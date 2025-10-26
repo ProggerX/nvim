@@ -1,7 +1,7 @@
 require('config/keymaps')
 require('config/lazy')
 require('config/opts')
-require('config/lsp')
 require('config/cmp')
 require('config/ts')
 require('config/haskell')
+require('config/lsp')
