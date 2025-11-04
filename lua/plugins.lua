@@ -50,5 +50,6 @@ return {
 		version = '1.*',
 		opts_extend = { "sources.default" }
 	},
-	'nvim-treesitter/nvim-treesitter-textobjects'
+	'nvim-treesitter/nvim-treesitter-textobjects',
+	{ 'wakatime/vim-wakatime', lazy = false }
 }
