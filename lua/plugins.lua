@@ -39,10 +39,10 @@ return {
 	{ 'numToStr/Comment.nvim', opts = {} },
 	{ 'kylechui/nvim-surround', event = 'VeryLazy', opts = {} },
 	{ 'folke/todo-comments.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = {} },
-	{
-		'mrcjkb/haskell-tools.nvim',
-		version = '*'
-	},
+	-- {
+	-- 	'mrcjkb/haskell-tools.nvim',
+	-- 	version = '*'
+	-- },
 	{ "farbodsz/pointfree.nvim" },
 	{
 		'saghen/blink.cmp',
