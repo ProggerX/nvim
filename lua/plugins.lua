@@ -14,7 +14,14 @@ return {
 	},
 	{ 'akinsho/toggleterm.nvim', opts = {} },
 	{ 'sainnhe/gruvbox-material' },
-	{ 'stevearc/oil.nvim', opts = {} },
+	{ 'stevearc/oil.nvim', opts = {
+		columns = {
+			"permissions"
+		},
+		view_options = {
+			show_hidden = true
+		}
+	} },
 	{ 'folke/trouble.nvim', opts = {} },
 	'nvim-telescope/telescope.nvim',
 	{ 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons', event = "BufAdd", opts = {} },
