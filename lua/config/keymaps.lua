@@ -23,7 +23,10 @@ vim.keymap.set('n', 'tg', '<CMD>Telescope live_grep<CR>', {desc = 'Telescope liv
 vim.keymap.set('n', '<leader>q', '<CMD>q<CR>')
 vim.keymap.set('n', 'zz', 'ZZ')
 vim.keymap.set('n', '<leader>s', '<:%s/')
-vim.keymap.set('n', '<Esc>', '<CMD>noh<CR>')
+vim.keymap.set('n', '<Esc>', function()
+    vim.cmd("noh")
+    return "<Esc>"
+end, { expr = true, silent = true, desc = "Escape and clear hlsearch" })
 vim.keymap.set('n', '<leader>a', '<cmd>AerialNavToggle<CR>')
 vim.keymap.set('n', '<leader>A', '<cmd>AerialToggle!<CR>')
 
