@@ -5,3 +5,6 @@ vim.lsp.enable "tinymist"
 vim.lsp.enable "gopls" 
 vim.lsp.enable "nixd" 
 vim.lsp.enable "hls" 
+
+
+vim.diagnostic.config{ virtual_lines = { current_line = true } }
