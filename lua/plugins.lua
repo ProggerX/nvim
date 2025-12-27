@@ -58,5 +58,6 @@ return {
 		opts_extend = { "sources.default" }
 	},
 	'nvim-treesitter/nvim-treesitter-textobjects',
-	{ 'wakatime/vim-wakatime', lazy = false }
+	{ 'wakatime/vim-wakatime', lazy = false },
+	{ 'folke/drop.nvim', opts = {} }
 }
