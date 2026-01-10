@@ -55,5 +55,6 @@ return {
 	},
 	'nvim-treesitter/nvim-treesitter-textobjects',
 	{ 'wakatime/vim-wakatime', lazy = false },
-	{ 'folke/drop.nvim', opts = {} }
+	{ 'folke/drop.nvim', opts = {} },
+	{ 'ProggerX/hooglebuf', opts = {} },
 }
