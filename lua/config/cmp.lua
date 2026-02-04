@@ -1,3 +1,5 @@
+require("luasnip.loaders.from_vscode").lazy_load()
+
 require('blink.cmp').setup({
 	appearance = {
 		nerd_font_variant = 'mono'
@@ -7,11 +9,12 @@ require('blink.cmp').setup({
 		list = { selection = { preselect = false } },
 	},
 	sources = {
-		default = { 'lsp', 'path', 'snippets', 'buffer' },
+		default = { 'snippets', 'lsp', 'path', 'buffer' },
 	},
+	snippets = { preset = 'luasnip' },
 	fuzzy = { implementation = "lua" },
 	keymap = {
-		preset = 'default',
+		preset = 'none',
 
 		['<C-j>'] = { 'snippet_forward', 'fallback' },
 		['<C-k>'] = { 'snippet_backward', 'fallback' },

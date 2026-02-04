@@ -27,7 +27,7 @@ return {
 	{ 'akinsho/bufferline.nvim', version = '*', dependencies = 'nvim-tree/nvim-web-devicons', event = 'BufAdd', opts = {} },
 	'neovim/nvim-lspconfig',
 	{ 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
-	'nvim-treesitter/nvim-treesitter',
+	{ 'nvim-treesitter/nvim-treesitter', branch = 'master' },
 	{
 		'ray-x/go.nvim',
 		dependencies = {
@@ -57,4 +57,8 @@ return {
 	{ 'wakatime/vim-wakatime', lazy = false },
 	{ 'folke/drop.nvim', opts = {} },
 	{ 'ProggerX/hooglebuf', opts = {} },
+	{
+		'L3MON4D3/LuaSnip',
+		dependencies = { 'rafamadriz/friendly-snippets' },
+	}
 }
