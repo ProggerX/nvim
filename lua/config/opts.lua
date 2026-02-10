@@ -17,4 +17,4 @@ vim.api.nvim_create_autocmd('BufWritePre', { pattern = { "*.hs" }, command = 'lu
 vim.api.nvim_create_autocmd('BufWritePre', { pattern = { "*.go" }, command = 'lua require("go.format").goimports()' })
 
 vim.g.gruvbox_material_transparent_background = 1
-vim.cmd('colorscheme base16-material')
+vim.cmd('colorscheme gruvbox-material')
