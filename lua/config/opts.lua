@@ -13,8 +13,8 @@ vim.opt.clipboard = 'unnamedplus'
 
 vim.api.nvim_create_autocmd('BufWritePre', { pattern = { "*.rs" }, command = 'lua vim.lsp.buf.format()' })
 vim.api.nvim_create_autocmd('BufWritePre', { pattern = { "*.hs" }, command = 'lua vim.lsp.buf.format()' })
-
 vim.api.nvim_create_autocmd('BufWritePre', { pattern = { "*.go" }, command = 'lua require("go.format").goimports()' })
+vim.api.nvim_create_autocmd('TermOpen', { pattern = { "*" }, command = 'startinsert' })
 
 vim.g.gruvbox_material_transparent_background = 1
 vim.cmd('colorscheme gruvbox-material')
