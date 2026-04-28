@@ -10,6 +10,7 @@ vim.opt.smartindent = true
 vim.opt.conceallevel = 0;
 
 vim.opt.clipboard = 'unnamedplus'
+vim.opt.undofile = true;
 
 vim.api.nvim_create_autocmd('BufWritePre', { pattern = { "*.rs" }, command = 'lua vim.lsp.buf.format()' })
 vim.api.nvim_create_autocmd('BufWritePre', { pattern = { "*.hs" }, command = 'lua vim.lsp.buf.format()' })
