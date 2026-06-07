@@ -4,6 +4,7 @@ vim.lsp.enable "rust-analyzer"
 vim.lsp.enable "tinymist" 
 vim.lsp.enable "gopls" 
 vim.lsp.enable "nixd" 
+vim.lsp.enable "nimls" 
 
 vim.lsp.config['hls'] = {
 	settings = {
