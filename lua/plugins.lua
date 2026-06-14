@@ -27,7 +27,16 @@ return {
   { 'akinsho/bufferline.nvim', version = '*', dependencies = 'nvim-tree/nvim-web-devicons', event = 'BufAdd', opts = {} },
   'neovim/nvim-lspconfig',
   { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
-  { 'nvim-treesitter/nvim-treesitter', branch = 'master' },
+  {
+    'nvim-treesitter/nvim-treesitter',
+    branch = 'main',
+    build = ':TSUpdate',
+    lazy = false,
+    config = function()
+      require('nvim-treesitter').setup {}
+      require('nvim-treesitter').install { 'haskell', 'go', 'nix', 'cpp', 'markdown' }
+    end,
+  },
   {
     'ray-x/go.nvim',
     dependencies = {
@@ -53,7 +62,25 @@ return {
     version = '1.*',
     opts_extend = { 'sources.default' }
   },
-  'nvim-treesitter/nvim-treesitter-textobjects',
+  {
+    'nvim-treesitter/nvim-treesitter-textobjects',
+    branch = 'main',
+    dependencies = { 'nvim-treesitter/nvim-treesitter' },
+    config = function()
+      require('nvim-treesitter-textobjects').setup {
+        select = {
+          lookahead = true,
+          include_surrounding_whitespace = true,
+        },
+      }
+      local select = require('nvim-treesitter-textobjects.select')
+      vim.keymap.set({ 'x', 'o' }, 'af', function() select.select_textobject('@function.outer', 'textobjects') end)
+      vim.keymap.set({ 'x', 'o' }, 'if', function() select.select_textobject('@function.inner', 'textobjects') end)
+      vim.keymap.set({ 'x', 'o' }, 'ac', function() select.select_textobject('@class.outer', 'textobjects') end)
+      vim.keymap.set({ 'x', 'o' }, 'ic', function() select.select_textobject('@class.inner', 'textobjects') end)
+      vim.keymap.set({ 'x', 'o' }, 'as', function() select.select_textobject('@local.scope', 'locals') end)
+    end,
+  },
   { 'wakatime/vim-wakatime', lazy = false },
   { 'folke/drop.nvim', opts = {} },
   { 'ProggerX/hooglebuf', opts = {} },
