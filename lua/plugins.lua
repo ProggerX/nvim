@@ -1,17 +1,4 @@
 return {
-  {
-    'stevearc/aerial.nvim',
-    opts = {
-      on_attach = function(bufnr)
-        vim.keymap.set('n', '{', '<cmd>AerialPrev<CR>', { buffer = bufnr })
-        vim.keymap.set('n', '}', '<cmd>AerialNext<CR>', { buffer = bufnr })
-      end,
-    },
-    dependencies = {
-       'nvim-treesitter/nvim-treesitter',
-       'nvim-tree/nvim-web-devicons'
-    },
-  },
   { 'akinsho/toggleterm.nvim', opts = {} },
   { 'sainnhe/gruvbox-material' },
   { 'stevearc/oil.nvim', opts = {
@@ -37,22 +24,9 @@ return {
       require('nvim-treesitter').install { 'haskell', 'go', 'nix', 'cpp', 'markdown' }
     end,
   },
-  {
-    'ray-x/go.nvim',
-    dependencies = {
-      'ray-x/guihua.lua',
-      'neovim/nvim-lspconfig',
-      'nvim-treesitter/nvim-treesitter',
-    },
-    config = function()
-      require('go').setup()
-    end,
-    event = {'CmdlineEnter'},
-    ft = {'go', 'gomod'},
-  },
+
   { 'folke/flash.nvim', event = 'VeryLazy', opts = { modes = { search = { enabled = true } } } },
-  { 'windwp/nvim-autopairs', event = 'InsertEnter', config = true },
-  { 'numToStr/Comment.nvim', opts = {} },
+   { 'windwp/nvim-autopairs', event = 'InsertEnter', config = true },
   { 'kylechui/nvim-surround', event = 'VeryLazy', opts = {} },
   { 'folke/todo-comments.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = {} },
   { 'farbodsz/pointfree.nvim' },
@@ -81,13 +55,9 @@ return {
       vim.keymap.set({ 'x', 'o' }, 'as', function() select.select_textobject('@local.scope', 'locals') end)
     end,
   },
-  { 'wakatime/vim-wakatime', lazy = false },
-  { 'folke/drop.nvim', opts = {} },
   { 'ProggerX/hooglebuf', opts = {} },
   {
     'L3MON4D3/LuaSnip',
     dependencies = { 'rafamadriz/friendly-snippets' },
-  },
-  { 'RRethy/base16-nvim', lazy = false },
-  { "axsaucedo/neovim-power-mode" },
+   },
 }

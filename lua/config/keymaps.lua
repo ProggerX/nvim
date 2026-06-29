@@ -27,10 +27,7 @@ vim.keymap.set('n', '<Esc>', function()
     vim.cmd("noh")
     return "<Esc>"
 end, { expr = true, silent = true, desc = "Escape and clear hlsearch" })
-vim.keymap.set('n', '<leader>a', '<cmd>AerialNavToggle<CR>')
-vim.keymap.set('n', '<leader>A', '<cmd>AerialToggle!<CR>')
-vim.keymap.set('n', '<leader>SS', '<cmd>lua require("drop").show()<CR>')
-vim.keymap.set('n', '<leader>SH', '<cmd>lua require("drop").hide()<CR>')
+vim.keymap.set('n', '<leader>a', '<cmd>Telescope lsp_document_symbols<CR>', {desc = 'File symbols'})
 
 -- Windows
 vim.keymap.set('n', '<C-h>', '<C-w>h')
