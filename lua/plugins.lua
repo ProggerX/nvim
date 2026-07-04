@@ -13,7 +13,6 @@ return {
   'nvim-telescope/telescope.nvim',
   { 'akinsho/bufferline.nvim', version = '*', dependencies = 'nvim-tree/nvim-web-devicons', event = 'BufAdd', opts = {} },
   'neovim/nvim-lspconfig',
-  { 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
   {
     'nvim-treesitter/nvim-treesitter',
     branch = 'main',
@@ -26,7 +25,7 @@ return {
   },
 
   { 'folke/flash.nvim', event = 'VeryLazy', opts = { modes = { search = { enabled = true } } } },
-   { 'windwp/nvim-autopairs', event = 'InsertEnter', config = true },
+  { 'windwp/nvim-autopairs', event = 'InsertEnter', config = true },
   { 'kylechui/nvim-surround', event = 'VeryLazy', opts = {} },
   { 'folke/todo-comments.nvim', dependencies = { 'nvim-lua/plenary.nvim' }, opts = {} },
   { 'farbodsz/pointfree.nvim' },
