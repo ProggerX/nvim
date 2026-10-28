@@ -18,4 +18,5 @@ vim.api.nvim_create_autocmd('BufWritePre', { pattern = { "*.hs" }, command = 'lu
 vim.api.nvim_create_autocmd('TermOpen', { pattern = { "*" }, command = 'startinsert' })
 
 vim.g.gruvbox_material_transparent_background = 1
+vim.g.gruvbox_material_foreground = 'mix'
 vim.cmd('colorscheme gruvbox-material')
